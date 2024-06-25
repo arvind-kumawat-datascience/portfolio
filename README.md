@@ -1,2 +1,2 @@
-# mohit2008.github.io
-My Data science portfolio, check it out on https://mohit2008.github.io/
+# arvind-kumawat-datascience.github.io
+My Data science portfolio, check it out on https://arvind-kumawat-datascience.github.io/
