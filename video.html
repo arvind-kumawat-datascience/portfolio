@@ -4,13 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QRious.ai</title>
+    <style>
+        /* Ensure the video container scales responsively */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Responsive typography for the header */
+        h1 {
+            font-size: 5vw;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Additional padding for better presentation on smaller screens */
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Ensures proper scaling for small screen sizes */
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 7vw;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Round 3</h1>
-    <!-- Video Embed -->
-    <video width="720" height="729" controls>
-        <source src="assets/pranked.mp4" type="video/mp4">
-            Not supporting
-    </video>
+    
+    <!-- Responsive Video Container -->
+    <div class="video-container">
+        <video controls>
+            <source src="../assets/pranked.mp4" type="video/mp4">
+            No not supporting
+        </video>
+    </div>
+
 </body>
 </html>
