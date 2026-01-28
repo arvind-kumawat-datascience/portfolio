@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvind Kumawat - Data & Business Operations Analyst</title>
+    <!-- CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <!-- Custom styles CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">Arvind Kumawat</a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector(".menu-toggle");
+            const navMenu = document.querySelector(".nav-links");
+            const navLinks = document.querySelectorAll(".nav-link");
+
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+
+            navLinks.forEach(n => n.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            }));
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Portfolio</p>
+                <h1 class="hero-title">Data & Business Operations Analyst</h1>
+                <p class="hero-description">
+                    Hybrid background in eCommerce operations, supply chain workflows, full-stack software development,
+                    and data analytics. Building systems to automate processes and support high-stakes decisions.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    I am a Data & Business Operations Analyst with a diverse background spanning eCommerce operations,
+                    supply chain workflows, and full-stack development. I have a proven track record of building
+                    systems, automating complex processes, and managing large-scale datasets to drive operational
+                    efficiency.
+                </p>
+                <p class="about-text">
+                    My experience ranges from retail operations and redevelopment analytics to building
+                    university-adopted platforms. With a strong technical stack including Python, SQL, FastAPI, React,
+                    and Power BI, I bridge the gap between technical data solutions and real-world business execution.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+
+                <!-- Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Aug 2024 – Present</div>
+                        <h3 class="timeline-title">Product Analytics Executive</h3>
+                        <div class="timeline-company">Purferme Project (Startup)</div>
+                        <ul class="timeline-desc">
+                            <li>Analyzed product, marketplace, and customer behavior data to support growth and
+                                operational decisions.</li>
+                            <li>Built internal dashboards and KPI trackers for sales, product movement, and operational
+                                performance.</li>
+                            <li>Coordinated across product, marketing, and operations to identify workflow bottlenecks
+                                and fix process gaps.</li>
+                            <li>Improved listing quality, digital presence, and operational efficiency using structured
+                                analytics.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun 2024 – Jul 2024</div>
+                        <h3 class="timeline-title">General Management Intern</h3>
+                        <div class="timeline-company">Purferme Project</div>
+                        <ul class="timeline-desc">
+                            <li>Supported cross-functional activities including vendor coordination, documentation, and
+                                eCommerce processes.</li>
+                            <li>Assisted founders with marketplace listings, pricing workflows, and operational
+                                reporting.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Nov 2024 – Jun 2025</div>
+                        <h3 class="timeline-title">Machine Learning Engineer Intern</h3>
+                        <div class="timeline-company">Biogred (Jain University)</div>
+                        <ul class="timeline-desc">
+                            <li>Built the university-adopted Mentee Tracker system using FastAPI, React, Redis, SQL, and
+                                AWS.</li>
+                            <li>Designed real-time activity feed (story-like UI) for student performance tracking and
+                                faculty coordination.</li>
+                            <li>Reduced manual workload by automating data entry, communication flows, and tracking
+                                logic.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Mar 2020 – Present</div>
+                        <h3 class="timeline-title">eCommerce & Supply Chain Operations Analyst</h3>
+                        <div class="timeline-company">Royal Herbs (Part-Time / Remote)</div>
+                        <ul class="timeline-desc">
+                            <li>Managed eCommerce listings, pricing, catalog quality, order flow, and platform
+                                compliance for Amazon, Flipkart, and website.</li>
+                            <li>Built Excel-based tracking systems for orders, SKUs, inventory, returns, dispatch
+                                operations, and delivery metrics.</li>
+                            <li>Analyzed sales trends, customer reviews, and stock movement to support product decisions
+                                and demand planning.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2022 – Aug 2025</div>
+                        <h3 class="timeline-title">Redevelopment Data Analyst</h3>
+                        <div class="timeline-company">Tillbai Apartments (Redevelopment Project)</div>
+                        <ul class="timeline-desc">
+                            <li>Managed flat-wise redevelopment data including agreements, area details, payment
+                                records, and communication logs.</li>
+                            <li>Designed structured Excel models to track financial flows, member documentation, and
+                                construction progress.</li>
+                            <li>Standardized disorganized multi-year datasets into clean analytical formats.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2022 – Jun 2023</div>
+                        <h3 class="timeline-title">Digital System & Data Operations Manager</h3>
+                        <div class="timeline-company">Shree Kumawat Samaj Seva Trust</div>
+                        <ul class="timeline-desc">
+                            <li>Digitized 1,000+ membership and transaction records, eliminating manual paper-heavy
+                                workflows.</li>
+                            <li>Built trust website and database-driven digital system for membership updates and record
+                                automation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <!-- Placeholder based on previous file names, assuming existence or broken link fallback -->
+                        <img src="assets/images/sentiment_analysis_of_imdb_and_flipkart_reviews-Project_1.jpg"
+                            alt="Sentiment Analyzer" onerror="this.style.display='none'">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sentiment Intensity Analyzer</h3>
+                        <p class="project-desc">Developed a text-based sentiment polarity scoring tool using VADER.
+                            Implemented preprocessing, scoring logic, and UI for real-time sentiment insights.</p>
+                        <div class="project-links">
+                            <span class="project-link">Python</span>
+                            <span class="project-link">Flask</span>
+                            <span class="project-link">VADER</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/images/comparison_of_ecommerce_platforms-Project_2.jpg" alt="Ecommerce Titans"
+                            onerror="this.style.display='none'">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Flipkart/Amazon Review Sentiment Analysis</h3>
+                        <p class="project-desc">Scraped product reviews using BeautifulSoup, cleaned raw text data, and
+                            analyzed sentiment using NLTK. Generated actionable insights for product improvement.</p>
+                        <div class="project-links">
+                            <span class="project-link">Web Scraping</span>
+                            <span class="project-link">NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/images/item-new-2.jpg" alt="GDP Prediction"
+                            onerror="this.style.display='none'">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">India GDP Prediction System</h3>
+                        <p class="project-desc">Modeled multi-factor GDP forecasting using economic, industrial,
+                            climatic, and social indicators. Compared classical (ARIMA, VARMA) and deep-learning (LSTM)
+                            models.</p>
+                        <div class="project-links">
+                            <span class="project-link">LSTM</span>
+                            <span class="project-link">ARIMA</span>
+                            <span class="project-link">Time Series</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/images/ecommerce.jpg" alt="Ecommerce Intelligence"
+                            onerror="this.style.display='none'">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Ecommerce Intelligence System</h3>
+                        <p class="project-desc">Developed customer churn prediction, sentiment analysis, and price
+                            negotiation components using Random Forest and regression techniques.</p>
+                        <div class="project-links">
+                            <span class="project-link">ML</span>
+                            <span class="project-link">Random Forest</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="assets/images/item-4.jpg" alt="Email Automation" onerror="this.style.display='none'">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Bulk Email Automation Platform</h3>
+                        <p class="project-desc">Built UI for non-technical users to send bulk emails with automated
+                            backend delivery tracking. Integrated email APIs with validation.</p>
+                        <div class="project-links">
+                            <span class="project-link">React</span>
+                            <span class="project-link">FastAPI</span>
+                            <span class="project-link">Zoho Mail API</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+
+                <div class="skill-category">
+                    <h3>Data Science & ML</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">NLTK</span>
+                        <span class="skill-tag">LSTM</span>
+                        <span class="skill-tag">ARIMA</span>
+                        <span class="skill-tag">VARMA</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Web & Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Operations</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Excel (Pivot, Dashboards)</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Shopify</span>
+                        <span class="skill-tag">WordPress</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="edu-grid">
+
+                <div class="edu-card">
+                    <div class="edu-info">
+                        <h3>MSc Data Science & Analytics</h3>
+                        <p>Jain University | CGPA: 8.25</p>
+                    </div>
+                    <div class="edu-year">2023 - 2025</div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-info">
+                        <h3>BSc Computer Science (AI/ML & VR)</h3>
+                        <p>Sandip University | CGPA: 8.81</p>
+                    </div>
+                    <div class="edu-year">2020 - 2023</div>
+                </div>
+
+            </div>
+
+            <div style="margin-top: 50px;">
+                <h3 style="margin-bottom: 20px; font-size: 1.5rem;">Certifications</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python for Data Science, AI & Development (Coursera)</span>
+                    <span class="skill-tag">SQL: A Practical Introduction (Coursera)</span>
+                    <span class="skill-tag">Excel Basics for Data Analysis (Coursera)</span>
+                    <span class="skill-tag">Apache Spark: An Introduction (Coursera)</span>
+                    <span class="skill-tag">Introduction to Git & GitHub (Coursera)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card">
+                <div class="contact-item">
+                    <i class="fa fa-phone"></i> 7045440507
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-envelope"></i> arvindkumawat.datascience@gmail.com
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-map-marker"></i> Mumbai, Maharashtra
+                </div>
+                <div style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
+                    <a href="https://linkedin.com/in/arvindinsights" class="btn btn-outline" target="_blank"><i
+                            class="fa fa-linkedin"></i> LinkedIn</a>
+                    <!-- Assuming GitHub link from previous context or generic search -->
+                    <a href="https://github.com/arvind-kumawat-datascience" class="btn btn-outline" target="_blank"><i
+                            class="fa fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; color: #666; font-size: 0.9rem;">
+        &copy; 2026 Arvind Kumawat. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
